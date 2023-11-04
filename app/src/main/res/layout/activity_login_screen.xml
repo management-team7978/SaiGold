@@ -14,15 +14,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#1BFFFFFF">
+        android:background="#1FA79A3E">
 
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/lnr"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp">
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/rltop">
             <ImageView
                 android:id="@+id/img"
                 android:layout_width="50dp"
@@ -61,111 +61,95 @@
         </RelativeLayout>
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/tvName"-->
-<!--            android:layout_below="@id/img"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Welcome To,"-->
-<!--            android:textColor="#1B1B1A"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:textSize="20sp"-->
-<!--            android:layout_marginBottom="-5dp"-->
-<!--            android:fontFamily="@font/poppins_medium"-->
-<!--            android:layout_marginTop="20dp"/>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/t"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Sai Gold"-->
-<!--            android:textColor="@color/sai_gold"-->
-<!--            android:layout_marginLeft="20dp"-->
-<!--            android:textSize="22sp"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:layout_below="@id/tvName"-->
-<!--            android:fontFamily="@font/poppins_semi_bold"/>-->
-
-
-
-        <LinearLayout
-            android:id="@+id/lnr"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_centerInParent="true"
-
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="0dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/rltop">
 
-
-            <com.google.android.material.textfield.TextInputLayout
+            <LinearLayout
+                android:id="@+id/lnr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:boxBackgroundColor="@android:color/transparent"
-                android:background="@android:color/transparent"
-                app:startIconDrawable="@drawable/ic_user"
-                app:startIconTint="@color/black"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:hint="User Id"
-                    android:id="@+id/edtUserId"
-                    android:inputType="text"
-                    android:textColorHint="@color/text_gray"
-                    android:background="@drawable/edt_background"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:orientation="vertical"
+                android:padding="15dp">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:boxBackgroundColor="@android:color/transparent"
-                android:background="@android:color/transparent"
-                app:startIconDrawable="@drawable/ic_user"
-                app:startIconTint="@color/text_gray"
-                app:boxStrokeWidth="0dp"
-                app:boxStrokeWidthFocused="0dp"
-                app:passwordToggleEnabled="true">
-                <EditText
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:id="@+id/edtPassword"
+                    android:layout_marginTop="10dp"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    app:startIconDrawable="@drawable/ic_user"
+                    app:startIconTint="@color/black"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="User Id"
+                        android:id="@+id/edtUserId"
+                        android:inputType="text"
+                        android:textColorHint="@color/text_gray"
+                        android:background="@drawable/edt_background"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    app:startIconDrawable="@drawable/ic_user"
+                    app:startIconTint="@color/text_gray"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/edtPassword"
+                        android:textColor="@color/black"
+                        android:hint="Enter Password"
+                        android:textColorHint="@color/text_gray"
+                        android:inputType="text"
+                        android:background="@drawable/edt_background"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvForgotPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="Forgot Password ?"
                     android:textColor="@color/black"
-                    android:hint="Enter Password"
-                    android:textColorHint="@color/text_gray"
-                    android:inputType="text"
-                    android:background="@drawable/edt_background"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:fontFamily="@font/poppins_medium" />
 
-            <TextView
-                android:id="@+id/tvForgotPass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="left"
-                android:text="Forgot Password ?"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_medium" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Login"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/tvSignIn"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_shape"
-                android:text="Login"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:fontFamily="@font/poppins_medium" />
-        </LinearLayout>
+
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -229,10 +213,6 @@
 <!--            android:layout_marginBottom="10dp"-->
 <!--            android:fontFamily="@font/poppins_semi_bold"/>-->
 <!--    </RelativeLayout>-->
-
-
-
-
 
 <!--    <RelativeLayout-->
 <!--        android:layout_width="match_parent"-->
