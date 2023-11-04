@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="User Id: DP123456"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:background="@drawable/card_text_view_shape"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:paddingTop="3dp"-->
+<!--                android:paddingBottom="3dp"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:paddingRight="15dp"-->
+<!--                android:id="@+id/tvUserID"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_below="@id/tvUserID">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:src="@drawable/ic_user"-->
+<!--                        android:id="@+id/imgUser"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="User Name: Priyanka Ghadge"-->
+<!--                        android:id="@+id/tvUserName"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:layout_toRightOf="@id/imgUser"-->
+<!--                        android:layout_marginLeft="5dp"/>-->
+<!--                </RelativeLayout>-->
+
+<!--               <RelativeLayout-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:layout_marginTop="10dp">-->
+<!--                   <ImageView-->
+<!--                       android:layout_width="20dp"-->
+<!--                       android:layout_height="23dp"-->
+<!--                       android:src="@drawable/id"-->
+<!--                       android:id="@+id/imgId"/>-->
+<!--                   <TextView-->
+<!--                       android:layout_width="match_parent"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Client Id: AB12433"-->
+<!--                       android:layout_marginLeft="5dp"-->
+<!--                       android:textSize="14sp"-->
+<!--                       android:id="@+id/tvClientID"-->
+<!--                       android:layout_toRightOf="@+id/imgId"/>-->
+<!--               </RelativeLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="#80000000"-->
+<!--                    android:layout_marginTop="10dp"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Date: 2023-01-05 14:43:30"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:id="@+id/tvDate"-->
+<!--                        android:layout_alignParentRight="true"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_alignParentLeft="true">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="23dp"-->
+<!--                        android:layout_height="23dp"-->
+<!--                        android:src="@drawable/coin"-->
+<!--                        android:id="@+id/imgcoin"-->
+<!--                        android:tint="@color/gold"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Amount: RS.2000.00"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:id="@+id/tvAmount"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_toRightOf="@id/imgcoin"-->
+<!--                        android:layout_marginLeft="5dp"/>-->
+<!--                </RelativeLayout>-->
+<!--            </RelativeLayout>-->
+<!--        </LinearLayout>-->
+<!--            -->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:background="@drawable/card_shape"-->
+<!--        android:layout_below="@id/card1"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="-25dp"/>-->
+</LinearLayout>

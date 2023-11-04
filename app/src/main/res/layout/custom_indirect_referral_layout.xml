@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="170dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardUseCompatPadding="true">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:background="@drawable/direct_green"-->
+<!--                android:id="@+id/lnr">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="User Id: DP123456"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:id="@+id/tvStatus"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="15dp"/>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginLeft="12dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_below="@id/lnr">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Phone"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:id="@+id/tvUserId"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:drawableTint="@color/Marigold"-->
+<!--                    android:drawableLeft="@drawable/ic_user"-->
+<!--                    android:layout_toRightOf="@+id/imgId"-->
+<!--                    android:gravity="center_vertical"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="User Name: Priyanka Ghadge"-->
+<!--                    android:id="@+id/tvUserName"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:drawableTint="@color/Marigold"-->
+<!--                    android:drawableLeft="@drawable/ic_user"-->
+<!--                    android:layout_toRightOf="@id/imgUser"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:layout_marginTop="5dp"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Date: 2023-01-05 14:43:30"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:textSize="12sp"-->
+<!--                        android:id="@+id/tvDate"-->
+<!--                        android:drawablePadding="10dp"-->
+<!--                        android:drawableTint="@color/Marigold"-->
+<!--                        android:drawableLeft="@drawable/ic_baseline_calendar_month_24"-->
+<!--                        android:gravity="center_vertical"/>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="@drawable/card_view_referral"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:visibility="visible">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="View Referral"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginRight="8dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:id="@+id/tvViewReferral" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_toLeftOf="@id/tvViewReferral"-->
+<!--                    android:src="@drawable/ic_baseline_keyboard_double_arrow_right_24"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    app:tint="@color/white"-->
+<!--                    android:layout_marginRight="-10dp"/>-->
+
+<!--            </RelativeLayout>-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:background="#64a237"-->
+<!--        android:layout_below="@id/card1"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="-28dp"-->
+<!--        android:id="@+id/card_background"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone"/>-->
+
+</LinearLayout>

@@ -1,0 +1,368 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sai.fragment.IndirectReferralFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:background="@drawable/menu_back"
+            android:backgroundTint="#ffffff"
+            android:elevation="5dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/lllevels"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:tint="@color/gold"
+                android:src="@drawable/referral">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 1"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlone"
+                        android:drawableTint="@color/purple_700"
+                        android:background="@drawable/viewlevelripple"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 2"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvltwo"
+                        android:visibility="gone"
+                        android:background="@drawable/viewlevelripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 3"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlthree"
+                        android:visibility="gone"
+                        android:background="@drawable/viewlevelripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 4"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlfour"
+                        android:visibility="gone"
+                        android:background="@drawable/viewlevelripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 5"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlfive"
+                        android:visibility="gone"
+                        android:drawableTint="@color/purple_700"
+                        android:background="@drawable/viewlevelripple"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 6"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlsix"
+                        android:visibility="gone"
+                        android:drawableTint="@color/purple_700"
+                        android:background="@drawable/viewlevelripple"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 7"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlseven"
+                        android:visibility="gone"
+                        android:drawableTint="@color/purple_700"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 8"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:id="@+id/tvlvleight"
+                        android:visibility="gone"
+                        android:padding="4dp"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 10"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlten"
+                        android:visibility="gone"
+                        android:drawableTint="@color/purple_700"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 11"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:id="@+id/tvlvleleven"
+                        android:visibility="gone"
+                        android:padding="4dp"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 12"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:id="@+id/tvlvltwelve"
+                        android:visibility="gone"
+                        android:padding="4dp"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 13"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:padding="4dp"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/tvlvlthirteen"
+                        android:visibility="gone"
+                        android:drawableTint="@color/purple_700"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 14"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:id="@+id/tvlvlfourteen"
+                        android:visibility="gone"
+                        android:padding="4dp"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableTint="@color/purple_700"
+                        android:drawableRight="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 15"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:id="@+id/tvlvlfifteen"
+                        android:visibility="gone"
+                        android:padding="4dp"
+                        android:background="@drawable/viewplanripple"
+                        android:drawableTint="@color/purple_700"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lllevels">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/swipeRefresh"
+                android:visibility="visible">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerIndirectReferral"/>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="50dp"
+            android:clickable="true"
+            android:id="@+id/relativeLayoutInDirectRefeeralNoDatatwo"
+            android:visibility="gone"
+            android:layout_below="@+id/lllevels"
+            >
+
+<!--            <com.airbnb.lottie.LottieAnimationView-->
+<!--                android:id="@+id/lottiennNotFound"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginTop="-50dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:scaleType="fitXY"-->
+<!--                app:lottie_autoPlay="true"-->
+<!--                app:lottie_fileName="59204-sad-look.json"-->
+<!--                app:lottie_loop="true"-->
+<!--                app:lottie_speed="1" />-->
+
+            <TextView
+                android:id="@+id/textViewinDirectReferralMessage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="No Direct Referrals for selected user"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlNotFound"
+        android:visibility="gone"
+        android:background="@color/white">
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/lottieNotFound"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginTop="-50dp"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_fileName="no-data-animation.json"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_speed="1" />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFFFFFF"
+        android:visibility="gone"
+        android:id="@+id/rlLoader">
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/lottie_main"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:scaleType="fitXY"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_fileName="10558-coin-circling-wallet.json"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_speed="1" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Please Wait!"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</FrameLayout>

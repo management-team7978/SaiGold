@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="left"
+    android:id="@+id/drawer_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/black_corner_shape"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/header"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_dehaze_24"
+                android:layout_centerVertical="true"
+                app:tint="@color/white"
+                android:id="@+id/imageViewMMenu"/>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sapphire Gold"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_share"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                app:tint="@color/white"
+                android:id="@+id/imgShare"
+                />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottomNav"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            tools:targetApi="lollipop"
+            android:background="#000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/lnrHome"
+                android:background="@drawable/round_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_home"
+                    app:tint="@color/white"
+                    android:id="@+id/imgHome"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14sp"
+                    android:id="@+id/tvHome"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrNotification"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_notifications"
+                    android:id="@+id/imgNotification"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notification"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    android:id="@+id/tvNotification"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrProfile"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_user"
+                    app:tint="@color/white"
+                    android:id="@+id/imgProfile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    android:id="@+id/tvProfile"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:id="@+id/nav_view"
+        android:background="@color/black"
+        app:headerLayout="@layout/nav_header_layout"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>
